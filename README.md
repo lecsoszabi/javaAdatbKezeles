@@ -90,7 +90,6 @@ text
 
 ## Példa képernyőkép
 ![Screenshot 2024-12-29 151358](https://github.com/user-attachments/assets/bace0937-91f9-4c7f-9f3f-df179a51848a)
-**
 
 ---
 
