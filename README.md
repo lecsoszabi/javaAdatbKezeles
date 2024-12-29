@@ -44,6 +44,7 @@ cd bolt-termekkezelo
 text
 
 2. Hozz létre egy MySQL adatbázist:
+```
 CREATE DATABASE bolt_db;
 USE bolt_db;
 CREATE TABLE termekek (
@@ -52,9 +53,8 @@ nev VARCHAR(255) NOT NULL,
 darabszam INT NOT NULL,
 lejarati_datum DATE NOT NULL
 );
-text
-
-3. Állítsd be az adatbázis kapcsolatot:
+```
+4. Állítsd be az adatbázis kapcsolatot:
 - Nyisd meg a `SwingMySQLApp.java` fájlt.
 - Módosítsd az alábbi sorokat a saját MySQL konfigurációd alapján:
   ```
