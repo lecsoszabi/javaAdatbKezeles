@@ -203,7 +203,41 @@ public class SwingMySQLApp {
     }
 
     private static void insertRandomProducts(Connection conn, int count) throws SQLException {
-        String[] productNames = {"Alma", "Banán", "Narancs", "Tej", "Kenyér", "Sajt", "Csokoládé", "Kávé", "Tea", "Vaj"};
+        String[] productNames = {
+                "Alma", "Banán", "Narancs", "Tej", "Kenyér", "Sajt", "Csokoládé", "Kávé", "Tea", "Vaj",
+                "Paradicsom", "Uborka", "Paprika", "Hagyma", "Fokhagyma", "Répa", "Burgonya", "Brokkoli",
+                "Karfiol", "Cukkini", "Padlizsán", "Saláta", "Gomba", "Körte", "Szőlő", "Eper",
+                "Málna", "Áfonya", "Citrom", "Lime", "Ananász", "Mangó", "Avokádó",
+                "Csirkemell filé", "Sertéskaraj", "Marhahús szelet", "Halfilé",
+                "Sonka szeletek", "Kolbász", "Szalámi",
+                "Joghurt natúr", "Joghurt gyümölcsös",
+                "Tejszín főző", "Tejszín habtejszín",
+                "Túró Rudi csomagolt",
+                "Pizza (fagyasztott)",
+                "Lazac steak",
+                "Rántott hús (fagyasztott)",
+                "Tészta spagetti",
+                "Tészta penne",
+                "Rizs basmati",
+                "Rizs jázmin",
+                // Lidl Deluxe termékek
+                "Deluxe Belgiumi Csokoládéválogatás",
+                "Deluxe Pisztáciás Panettone",
+                "Deluxe Marcipános Stollen Rumos ízesítéssel",
+                // Ünnepi termékek
+                "Karácsonyi Mézeskalács",
+                "Karácsonyi Gyümölcskenyér",
+                // Egyéb
+                "Olívaolaj extra szűz",
+                "Napraforgóolaj",
+                // Snackek és édességek
+                "Chips sós ízesítésű",
+                "Chips paprikás ízesítésű",
+                // Italok
+                "Narancslé 100%",
+                // Gyerektermékek
+                // Egyéb szezonális termékek
+        };
         Random rand = new Random();
 
         String insertSQL = "INSERT INTO termekek (nev, darabszam, lejarati_datum) VALUES(?, ?, ?)";
